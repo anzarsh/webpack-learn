@@ -1,11 +1,15 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 module.exports = {
     entry: {
         main: {
             import: './src/index.js',
-            filename: './main1.js'
         },
         test: {
-            import: './src/test.js'
+            import: './src/test.js',
         }
-    }
+    },
+    plugins: [
+        new BundleAnalyzerPlugin()
+    ]
 };
