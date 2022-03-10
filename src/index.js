@@ -1,3 +1,4 @@
-import './test';
+import { foo } from './test';
 
 console.log('//////////////////////111222\\\\\\\\\\\\\\\\\\\\\\\\\\');
+foo();
