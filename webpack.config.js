@@ -1,6 +1,10 @@
 module.exports = {
     entry: {
-        main: './src/index.js',
-        test: './src/test.js'
+        main: {
+            import: './src/index.js'
+        },
+        test: {
+            import: './src/test.js'
+        }
     }
-}
+};
